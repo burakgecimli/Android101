@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anaSayfaFragment">
+
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.bugcompany.navigationcomponentkullanimi.AnaSayfaFragment"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_oyunSayfasiFragment"
+            app:destination="@id/oyunSayfasiFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunSayfasiFragment"
+        android:name="com.bugcompany.navigationcomponentkullanimi.OyunSayfasiFragment"
+        android:label="fragment_oyun_sayfasi"
+        tools:layout="@layout/fragment_oyun_sayfasi" >
+        <action
+            android:id="@+id/action_oyunSayfasiFragment_to_sonucSayfasiFragment"
+            app:destination="@id/sonucSayfasiFragment"
+            app:popUpTo="@id/oyunSayfasiFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="isim"
+            app:argType="string"
+            android:defaultValue="isim yok" />
+        <argument
+            android:name="yas"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="boy"
+            app:argType="float"
+            android:defaultValue="0.0" />
+        <argument
+            android:name="bekarMi"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="nesne"
+            app:argType="com.bugcompany.navigationcomponentkullanimi.Kisiler" />
+    </fragment>
+    <fragment
+        android:id="@+id/sonucSayfasiFragment"
+        android:name="com.bugcompany.navigationcomponentkullanimi.SonucSayfasiFragment"
+        android:label="fragment_sonuc_sayfasi"
+        tools:layout="@layout/fragment_sonuc_sayfasi" />
+</navigation>

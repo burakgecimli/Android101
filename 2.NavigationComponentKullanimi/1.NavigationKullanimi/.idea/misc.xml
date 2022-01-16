@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/burak/Desktop/Android101/2.NavigationComponentKullanimi/1.NavigationKullanimi/app/src/main/res/layout/fragment_ana_sayfa.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/burak/Desktop/Android101/2.NavigationComponentKullanimi/app/src/main/res/layout/activity_main.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/burak/Desktop/Android101/2.NavigationComponentKullanimi/app/src/main/res/layout/fragment_ana_sayfa.xml" value="0.264" />
+        <entry key="..\:/Users/burak/Desktop/Android101/2.NavigationComponentKullanimi/app/src/main/res/layout/fragment_oyun_sayfasi.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/burak/Desktop/Android101/2.NavigationComponentKullanimi/app/src/main/res/layout/fragment_sonuc_sayfasi.xml" value="0.23645833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
