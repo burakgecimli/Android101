@@ -12,8 +12,7 @@ import kotlinx.android.synthetic.main.fragment_oyun_sayfasi.view.*
 
 
 class OyunSayfasiFragment : Fragment() {
-
-
+    
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -21,7 +20,6 @@ class OyunSayfasiFragment : Fragment() {
     ): View? {
 
         val bundle: OyunSayfasiFragmentArgs by navArgs()
-
         val gelenAd = bundle.isim
         val gelenYas = bundle.yas
         val gelenBoy = bundle.boy
@@ -42,8 +40,6 @@ class OyunSayfasiFragment : Fragment() {
         val tasarim = inflater.inflate(R.layout.fragment_oyun_sayfasi, container, false)
 
         tasarim.buttonBitir.setOnClickListener {
-
-
             Navigation.findNavController(it)
                 .navigate(R.id.action_oyunSayfasiFragment_to_sonucSayfasiFragment)
         }
