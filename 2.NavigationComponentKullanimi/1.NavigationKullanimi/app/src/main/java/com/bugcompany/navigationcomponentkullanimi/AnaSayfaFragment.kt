@@ -10,8 +10,7 @@ import kotlinx.android.synthetic.main.fragment_ana_sayfa.view.*
 
 
 class AnaSayfaFragment : Fragment() {
-
-
+    
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
