@@ -28,8 +28,6 @@ class AnaSayfaFragment : Fragment() {
                 1.78F,
                 true,
                 kisi
-
-
             )
 
             Navigation.findNavController(it).navigate(gecis)
